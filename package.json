@@ -1,0 +1,30 @@
+{
+  "name": "next-util",
+  "version": "0.1.0",
+  "description": "Utilities for NexT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theme-next/next-util.git"
+  },
+  "keywords": [
+    "Hexo",
+    "NexT"
+  ],
+  "author": "NexT team",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/theme-next/next-util/issues"
+  },
+  "homepage": "https://github.com/theme-next/next-util#readme",
+  "dependencies": {
+    "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-theme-next": "^1.1.1"
+  }
+}
