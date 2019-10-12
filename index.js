@@ -1,7 +1,7 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
-const merge = require('lodash/merge');
+const { merge } = require('lodash');
 
 function getFileContent(pluginDir, file) {
   return fs.readFileSync(pluginDir ? path.join(pluginDir, file) : file, 'utf8');

@@ -6,11 +6,13 @@
 Utilities for NexT.
 
 ## Install
+
 ```bash
-npm install --save theme-next/next-util#last-release
+npm install theme-next/next-util
 ```
 
 ## Usage
+
 ```js
 var util = require('next-util');
 ```
