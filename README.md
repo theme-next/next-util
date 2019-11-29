@@ -14,5 +14,6 @@ npm install theme-next/next-util
 ## Usage
 
 ```js
-var util = require('next-util');
+const Util = require('next-util');
+const utils = new Util(hexo, __dirname);
 ```
