@@ -14,7 +14,8 @@ module.exports = function(hexo, pluginDir) {
   }
   this.defaultConfigFile = function(key, file) {
     let defaultConfig = yaml.safeLoad(this.getFileContent(file));
-    this.hexo.config[key] = merge(defaultConfig[key], this.hexo.theme.config[key], this.hexo.config[key]);
+    let data = hexo.locals.get('data');
+    this.hexo.config[key] = merge(defaultConfig[key], this.hexo.theme.config[key], this.hexo.config[key], data[key]);
     return this.hexo.config[key];
   }
 }
