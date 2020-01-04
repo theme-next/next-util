@@ -1,14 +1,19 @@
 # NexT Util
 
-[![Theme](https://img.shields.io/badge/NexT-v7.3.0+-blue.svg)](https://theme-next.org)
-![GitHub release](https://img.shields.io/github/release/theme-next/next-util.svg)
+[![npm-image]][npm-url]
+[![lic-image]](LICENSE)
+[![Theme Version](https://img.shields.io/badge/NexT-v7.3.0+-blue?style=flat-square)](https://theme-next.org)
 
 Utilities for NexT.
 
-## Install
+## Installation
+
+![size-image]
+[![dm-image]][npm-url]
+[![dt-image]][npm-url]
 
 ```bash
-npm install theme-next/next-util
+npm install next-util
 ```
 
 ## Usage
@@ -17,3 +22,12 @@ npm install theme-next/next-util
 const Util = require('next-util');
 const utils = new Util(hexo, __dirname);
 ```
+
+[npm-image]: https://img.shields.io/npm/v/next-util?style=flat-square
+[lic-image]: https://img.shields.io/npm/l/next-util?style=flat-square
+
+[size-image]: https://img.shields.io/github/languages/code-size/theme-next/next-util?style=flat-square
+[dm-image]: https://img.shields.io/npm/dm/next-util?style=flat-square
+[dt-image]: https://img.shields.io/npm/dt/next-util?style=flat-square
+
+[npm-url]: https://www.npmjs.com/package/next-util
