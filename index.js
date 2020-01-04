@@ -13,7 +13,7 @@ module.exports = function(hexo, pluginDir) {
     return fs.readFileSync(this.getFilePath(file), 'utf8');
   }
   this.defaultConfigFile = function(key, file) {
-    let defaultConfig = yaml.safeLoad(this.getFileContent(file));
+    let defaultConfig = file ? yaml.safeLoad(this.getFileContent(file)) : {};
     this.hexo.config[key] = merge(defaultConfig[key], this.hexo.theme.config[key], this.hexo.config[key]);
     return this.hexo.config[key];
   }
