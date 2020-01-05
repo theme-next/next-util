@@ -1,7 +1,7 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
-const deepmerge = require('deepmerge');
+const { merge } = require('lodash');
 
 module.exports = function(hexo, pluginDir) {
   this.hexo = hexo;
@@ -14,7 +14,7 @@ module.exports = function(hexo, pluginDir) {
   };
   this.defaultConfigFile = function(key, file) {
     let defaultConfig = file ? yaml.safeLoad(this.getFileContent(file)) : {};
-    this.hexo.config[key] = deepmerge(defaultConfig[key], this.hexo.theme.config[key], this.hexo.config[key]);
+    this.hexo.config[key] = merge(defaultConfig[key], this.hexo.theme.config[key], this.hexo.config[key]);
     return this.hexo.config[key];
   };
 };
