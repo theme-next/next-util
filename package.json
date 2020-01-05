@@ -1,6 +1,6 @@
 {
   "name": "next-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utilities for NexT.",
   "main": "index.js",
   "scripts": {
