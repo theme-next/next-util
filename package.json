@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/theme-next/next-util#readme",
   "dependencies": {
-    "js-yaml": "^3.13.1",
+    "js-yaml": "^4.0.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
